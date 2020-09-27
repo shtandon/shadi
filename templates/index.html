@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  
+</head>
+
+
+20   F21    91.897659
+21   F22    47.233375
+
+
+<body>
+ <div class="login">
+	<h1>Prediction for insurance</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+    	<input type="text" name="F2" placeholder="F2" required="required" />
+    	<input type="text" name="F4" placeholder="F4" required="required" />
+    	<input type="text" name="F10" placeholder="F10" required="required" />
+    	<input type="text" name="F14" placeholder="F14" required="required" />
+    	<input type="text" name="F17" placeholder="F17" required="required" />
+    	<input type="text" name="F18" placeholder="F18" required="required" />
+    	<input type="text" name="F19" placeholder="F19" required="required" />
+    	<input type="text" name="F20" placeholder="F20" required="required" />
+    	<input type="text" name="F21" placeholder="F21" required="required" />
+    	<input type="text" name="F22" placeholder="F22" required="required" /> 
+       <!--  <input type="text" name="test_score" placeholder="Test Score" required="required" /> -->
+		<!--<input type="text" name="interview_score" placeholder="Interview Score" required="required" /> -->
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   
+
+ </div>
+
+
+</body>
+</html>
